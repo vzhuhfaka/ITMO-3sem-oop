@@ -65,29 +65,7 @@ public class Program
                     {
                         break;
                     }
-                    bool flag = true;
-                    Console.WriteLine("Напишите в таком виде товар, который хотите добавить ->");
-                    Console.WriteLine("<номер места> <наименование товара> <цена> <количество штук>");
-                    while (flag)
-                    {
-                        Console.WriteLine("Напишите end чтобы закончить добавление");
-                        string? slot = Console.ReadLine();
-                        if (slot == "end")
-                        {
-                            break;
-                        }
-                        string[] parts = slot.Split();
-                        string number = parts[0];
-                        int row = utils.MatchNum(number[0].ToString());
-                        int column = utils.MatchNum(number[1].ToString());
-                        string name = parts[1];
-                        string price = parts[2];
-                        string quantity = parts[3];
-
-                        int priceInt = int.Parse(price);
-                        int quantityInt = int.Parse(quantity);
-                        VM.FillAssortment(name, priceInt, quantityInt, row, column);
-                    }
+                    VM.FillAssortment();
                     break;
                 case "6":
                     if (!isAdmin)
