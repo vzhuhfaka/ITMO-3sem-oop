@@ -2,6 +2,7 @@ public class VendingMachine
 {
     private Assortment _assort;
     private Utils utils = new Utils();
+    private Money money = new Money();
     private string _adminpassword;
 
     public void PrintProductsList()
@@ -9,46 +10,16 @@ public class VendingMachine
         _assort.printAssortment();
     }
 
-    public int InsertMoney(int amount)
+    public void InsertMoney()
     {
-        while (true)
-        {
-            Console.WriteLine($"Сумма в аппарате: {amount}");
-            Console.WriteLine("Вставьте монеты номиналом:");
-            Console.WriteLine("1. 1 руб.");
-            Console.WriteLine("2. 10 руб.");
-            Console.WriteLine("3. 50 руб.");
-            Console.WriteLine("Чтобы закончить напишите end");
-            var moneyChoice = Console.ReadLine();
-            if (moneyChoice == "end")
-            {
-                return amount;
-            }
-            switch (moneyChoice)
-            {
-                case "1":
-                    amount += 1;
-                    break;
-                case "2":
-                    amount += 10;
-                    break;
-                case "3":
-                    amount += 50;
-                    break;
-            }
-        }
+        money.InsertMoney();
     }
 
     public string SelectProduct()
     {
         return "";
     }
-
-    public string CancelOperation()
-    {
-        return "";
-    }
-
+    
     public bool EnterAdmin(string? password)
     {
         if (password == _adminpassword)
@@ -85,14 +56,19 @@ public class VendingMachine
         }
     }
 
-    public string CollectMoney()
+    public int getUserMoney()
     {
-        return "";
+        return money.getUserMoney();
     }
 
-    public string ExitAdmin()
+    public int CollectMoney()
     {
-        return "";
+        return money.getCollectedMoney();
+    }
+
+    public void nullUserMoney()
+    {
+        money.setUserMoney(0);
     }
 
     public VendingMachine(int rows, int columns, string adminpassword)

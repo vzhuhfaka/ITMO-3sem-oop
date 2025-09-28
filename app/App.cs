@@ -8,13 +8,12 @@ public class Program
         bool isAdmin = false;
 
         var utils = new Utils();
-
-        int VMamount = 0;
-
+        
         while (true)
         {
             Console.WriteLine("----------------------------");
-            Console.WriteLine($"Сумма в аппарате: {VMamount}");
+            Console.WriteLine($"Сумма в аппарате: {VM.getUserMoney()}");
+            Console.WriteLine("0. Вернуть деньги (отменить операцию)");
             Console.WriteLine("1. Список доступных товаров");
             Console.WriteLine("2. Вставить монеты");
             Console.WriteLine("3. Выбрать товар");
@@ -34,11 +33,14 @@ public class Program
 
             switch (choice)
             {
+                case "0":
+                    VM.nullUserMoney();
+                    break;
                 case "1":
                     VM.PrintProductsList();
                     break;
                 case "2":
-                    VMamount = VM.InsertMoney(VMamount);
+                    VM.InsertMoney();
                     break;
                 case "3":
                     Console.WriteLine(3);
