@@ -35,6 +35,7 @@ public class VendingMachine
         if (userMoney >= productPrice)
         {
             _money.setUserMoney(userMoney - productPrice);
+            _money.setCollectedMoney(getCollectedMoney() + productPrice);
             Console.WriteLine("*Выдача товара*");
             Console.WriteLine("Спасибо за покупку!");
         }
