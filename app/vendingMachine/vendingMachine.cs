@@ -92,6 +92,8 @@ public class VendingMachine
 
     public int CollectMoney()
     {
+        int _collectedMoney = _money.getCollectedMoney();
+        _money.setCollectedMoney(0);
         return _money.getCollectedMoney();
     }
 
