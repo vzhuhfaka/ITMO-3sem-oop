@@ -4,7 +4,10 @@ public class Program
 {
     public static void Main()
     {
-        var VM = new VendingMachine(2, 2, "f");
+        string adminpassword = "f";
+        int rows = 2;
+        int columns = 2;
+        var VM = new VendingMachine(rows, columns, adminpassword);
         bool isAdmin = false;
 
         while (true)
