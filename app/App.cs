@@ -36,6 +36,7 @@ public class Program
             switch (choice)
             {
                 case "0":
+                    Console.WriteLine($"Возвращено денег: {VM.getUserMoney()}");
                     VM.nullUserMoney();
                     break;
                 case "1":
