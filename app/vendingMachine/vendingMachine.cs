@@ -2,7 +2,7 @@ public class VendingMachine
 {
     private Assortment _assort;
     private Utils utils = new Utils();
-    private Money money = new Money();
+    private Money _money = new Money();
     private string _adminpassword;
 
     public void PrintProductsList()
@@ -12,12 +12,36 @@ public class VendingMachine
 
     public void InsertMoney()
     {
-        money.InsertMoney();
+        _money.InsertMoney();
     }
 
-    public string SelectProduct()
+    public void SelectProduct(string slotNum)
     {
-        return "";
+        int row = utils.MatchNum(slotNum[0].ToString());
+        int column = utils.MatchNum(slotNum[1].ToString());
+        string product = _assort.getOneItemName(row, column);
+        if (product == "")
+        {
+            Console.WriteLine("Такого товара нет, выберите другой");
+            return;
+        }
+        else if (product == "none")
+        {
+            Console.WriteLine("Товар закончился, выберите другой");
+            return;
+        }
+        int productPrice = _assort.getOneItemPrice(row, column);
+        int userMoney = _money.getUserMoney();
+        if (userMoney >= productPrice)
+        {
+            _money.setUserMoney(userMoney - productPrice);
+            Console.WriteLine("*Выдача товара*");
+            Console.WriteLine("Спасибо за покупку!");
+        }
+        else
+        {
+            Console.WriteLine("Недостаточно средств");
+        }
     }
     
     public bool EnterAdmin(string? password)
@@ -58,17 +82,27 @@ public class VendingMachine
 
     public int getUserMoney()
     {
-        return money.getUserMoney();
+        return _money.getUserMoney();
+    }
+
+    public int getCollectedMoney()
+    {
+        return _money.getCollectedMoney();
     }
 
     public int CollectMoney()
     {
-        return money.getCollectedMoney();
+        return _money.getCollectedMoney();
     }
 
     public void nullUserMoney()
     {
-        money.setUserMoney(0);
+        _money.setUserMoney(0);
+    }
+
+    public void nullCollectedMoney()
+    {
+        _money.setCollectedMoney(0);
     }
 
     public VendingMachine(int rows, int columns, string adminpassword)

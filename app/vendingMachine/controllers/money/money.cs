@@ -43,4 +43,8 @@ class Money
     {
         userMoney = amount;
     }
+    public void setCollectedMoney(int amount)
+    {
+        collectedMoney = amount;
+    }
 }

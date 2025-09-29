@@ -7,8 +7,6 @@ public class Program
         var VM = new VendingMachine(2, 2, "f");
         bool isAdmin = false;
 
-        var utils = new Utils();
-        
         while (true)
         {
             Console.WriteLine("----------------------------");
@@ -21,6 +19,7 @@ public class Program
             if (isAdmin)
             {
                 Console.WriteLine("!Вы вошли в систему как администатор!");
+                Console.WriteLine($"Средств в аппарате: {VM.getCollectedMoney()}");
                 Console.WriteLine("5. Пополнить ассортимент");
                 Console.WriteLine("6. Сбор собранных средств");
                 Console.WriteLine("7. Выйти из режима администратора");
@@ -43,7 +42,10 @@ public class Program
                     VM.InsertMoney();
                     break;
                 case "3":
-                    Console.WriteLine(3);
+                    Console.WriteLine("Напишите номер товара для покупки");
+                    string? productChoice = Console.ReadLine();
+                    VM.SelectProduct(productChoice);
+                    
                     break;
                 case "4":
                     if (!isAdmin)
@@ -74,7 +76,8 @@ public class Program
                     {
                         break;
                     }
-                    Console.WriteLine(6);
+                    int collectedMoney = VM.CollectMoney();
+                    Console.WriteLine($"Собрано средств: {collectedMoney}");
                     break;
                 case "7":
                     if (!isAdmin)

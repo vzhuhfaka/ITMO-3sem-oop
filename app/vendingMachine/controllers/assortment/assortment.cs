@@ -20,10 +20,20 @@ public class Assortment
         _quantities[row, column] = 0;
     }
 
-    public string getOneItem(int row, int column)
+    public string getOneItemName(int row, int column)
     {
+        if (_quantities[row, column] == 0)
+        {
+            return "none";
+        }
         _quantities[row, column]--;
         string requestedItem = _assortment[row, column];
+        return requestedItem;
+    }
+
+    public int getOneItemPrice(int row, int column)
+    {
+        int requestedItem = _prices[row, column];
         return requestedItem;
     }
 
