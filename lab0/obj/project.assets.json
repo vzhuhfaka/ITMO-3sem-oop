@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ostan\\.nuget\\packages\\": {}
+    "C:\\Users\\Andrey\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\projects\\ITMO-3sem-oop\\app\\app.csproj",
+      "projectUniqueName": "C:\\Dev\\Projects\\ITMO-3sem-oop\\lab0\\app.csproj",
       "projectName": "app",
-      "projectPath": "D:\\Dev\\projects\\ITMO-3sem-oop\\app\\app.csproj",
-      "packagesPath": "C:\\Users\\ostan\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\projects\\ITMO-3sem-oop\\app\\obj\\",
+      "projectPath": "C:\\Dev\\Projects\\ITMO-3sem-oop\\lab0\\app.csproj",
+      "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Projects\\ITMO-3sem-oop\\lab0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ostan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
