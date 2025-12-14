@@ -1,0 +1,7 @@
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_lab1.Tests
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.csproj.AssemblyReference.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.AssemblyInfoInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.AssemblyInfo.cs
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab1.Tests\obj\Debug\net9.0\lab1.Tests.sourcelink.json
