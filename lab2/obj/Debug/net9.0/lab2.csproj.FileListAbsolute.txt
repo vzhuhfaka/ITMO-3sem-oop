@@ -1,0 +1,15 @@
+C:\Dev\Projects\ITMO-3sem-oop\lab2\bin\Debug\net9.0\lab2.exe
+C:\Dev\Projects\ITMO-3sem-oop\lab2\bin\Debug\net9.0\lab2.deps.json
+C:\Dev\Projects\ITMO-3sem-oop\lab2\bin\Debug\net9.0\lab2.runtimeconfig.json
+C:\Dev\Projects\ITMO-3sem-oop\lab2\bin\Debug\net9.0\lab2.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab2\bin\Debug\net9.0\lab2.pdb
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.AssemblyInfoInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.AssemblyInfo.cs
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.sourcelink.json
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\refint\lab2.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.pdb
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\lab2.genruntimeconfig.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab2\obj\Debug\net9.0\ref\lab2.dll
