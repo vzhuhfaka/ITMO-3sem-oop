@@ -1,0 +1,15 @@
+C:\Dev\Projects\ITMO-3sem-oop\lab3\bin\Debug\net9.0\lab3.exe
+C:\Dev\Projects\ITMO-3sem-oop\lab3\bin\Debug\net9.0\lab3.deps.json
+C:\Dev\Projects\ITMO-3sem-oop\lab3\bin\Debug\net9.0\lab3.runtimeconfig.json
+C:\Dev\Projects\ITMO-3sem-oop\lab3\bin\Debug\net9.0\lab3.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab3\bin\Debug\net9.0\lab3.pdb
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.AssemblyInfoInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.AssemblyInfo.cs
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.csproj.CoreCompileInputs.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.sourcelink.json
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\refint\lab3.dll
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.pdb
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\lab3.genruntimeconfig.cache
+C:\Dev\Projects\ITMO-3sem-oop\lab3\obj\Debug\net9.0\ref\lab3.dll
