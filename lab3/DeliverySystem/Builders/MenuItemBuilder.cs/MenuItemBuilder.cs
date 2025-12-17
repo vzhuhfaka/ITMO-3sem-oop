@@ -1,24 +1,29 @@
 public class MenuItemBuilder : IMenuItemBuilder
 {
-    MenuItem menuItem = new MenuItem("", "", 0.0m);
+    private string _name = "";
+    private string _description = "";
+    private decimal _price = 0.0m;
 
     public IMenuItemBuilder SetName(string name)
     {
-        menuItem.Name = name;
+        _name = name;
         return this;
     }
+    
     public IMenuItemBuilder SetDescription(string description)
     {
-        menuItem.Description = description;
+        _description = description;
         return this;
     }
+    
     public IMenuItemBuilder SetPrice(decimal price)
     {
-        menuItem.Price = price;
+        _price = price;
         return this;
     }
+    
     public MenuItem Build()
     {
-        return menuItem;
+        return new MenuItem(_name, _description, _price);
     }
 }

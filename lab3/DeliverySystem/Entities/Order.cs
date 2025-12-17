@@ -6,6 +6,10 @@ public class Order
     public IDeliveryStrategy DeliveryStrategy {get; set;}
     public IDiscountStrategy DiscountStrategy {get; set;}
     public decimal TotalPrice => CalculateTotal();
+    private OrderStatusPublisher StatusPublisher = new();
+    
+    public void SubscribeObserver(IOrderObserver observer) => StatusPublisher.Subscribe(observer);
+    public void UnsubscribeObserver(IOrderObserver observer) => StatusPublisher.Unsubscribe(observer);
 
     public Order(int id, IDeliveryStrategy deliveryStrategy, IDiscountStrategy discountStrategy)
     {
@@ -35,8 +39,28 @@ public class Order
         decimal total = DiscountStrategy.CalculateAmount(subtotal);
         return total;
     }
-
-    public void Process() => State.Process();
-    public void Cancel() => State.Cancel();
-    public void MarkAsDelivered() => State.MarkAsDelivered();
+    public void Process()
+    {
+        State.Process();
+        StatusPublisher.Notify(this, $"(Уведомление) Заказ #{Id} перешел в статус: {State.GetStatus()}");
+    }
+    public void Cancel()
+    {
+        State.Cancel();
+        StatusPublisher.Notify(this, $"(Уведомление) Заказ #{Id} перешел в статус: {State.GetStatus()}");
+    }
+    public void MarkAsDelivered()
+    {
+        State.MarkAsDelivered();
+        StatusPublisher.Notify(this, $"(Уведомление) Заказ #{Id} перешел в статус: {State.GetStatus()}");
+    }
+    public string GetString()
+    {
+        string items = "";
+        foreach (MenuItem item in Items)
+        {
+            items += item.GetString() + "; ";
+        }
+        return $"Заказ #{Id} содержит следующее: {items}";
+    }
 }
